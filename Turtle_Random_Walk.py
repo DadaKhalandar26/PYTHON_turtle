@@ -1,5 +1,7 @@
 import random
+import turtle
 from turtle import Turtle, Screen
+turtle.colormode(255)
 
 
 def draw_shape(num_sides):
@@ -10,14 +12,16 @@ def draw_shape(num_sides):
 
 
 def random_colour():
-    return random.choice(colors)
+    red = random.randint(0, 255)
+    green = random.randint(0, 255)
+    blue = random.randint(0, 255)
+    RGB_Colour = (red, green, blue)
+    return RGB_Colour
 
 
 timmy = Turtle()
 timmy.shape("turtle")
 
-colors = ["#0000FF", "#00FFFF", "#EEE8AA", "#FFA500", "#BA55D3",
-          "#4B0082", "#008000", "#FFFF00", "#DC143C", "#556B2F"]
 directions = [0, 90, 180, 270]
 
 timmy.pensize(15)
@@ -32,3 +36,4 @@ for _ in range(200):
 
 screen = Screen()
 screen.exitonclick()
+
