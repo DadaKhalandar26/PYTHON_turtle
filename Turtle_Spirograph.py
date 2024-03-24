@@ -18,16 +18,16 @@ timmy.shape("turtle")
 
 colors = ["#0000FF", "#00FFFF", "#EEE8AA", "#FFA500", "#BA55D3",
           "#4B0082", "#008000", "#FFFF00", "#DC143C", "#556B2F"]
-directions = [0, 90, 180, 270]
 
-timmy.pensize(15)
 timmy.speed("fastest")
-
-
-for _ in range(200):
+timmy.penup()
+timmy.setposition(x=100, y=100)
+timmy.pendown()
+sides = 3
+for _ in range(10):
     timmy.color(random_colour())
-    timmy.forward(30)
-    timmy.setheading(random.choice(directions))
+    draw_shape(sides)
+    sides += 1
 
 
 screen = Screen()
