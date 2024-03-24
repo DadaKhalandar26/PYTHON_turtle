@@ -2,22 +2,27 @@ import turtle
 
 
 def forward():
+    """ This Funtion forwards turtle 20 tiles """
     my_turtle.forward(20)
 
 
 def backwards():
+    """ This Funtion backwards turtle 20 tiles """
     my_turtle.backward(20)
 
 
 def turn_clockwise():
+    """ This Funtion roiutates turtle heading clockwise """
     my_turtle.right(20)
 
 
 def turn_anticlockwise():
+    """ This Funtion roiutates turtle heading clockwise """
     my_turtle.left(20)
 
 
 def clear_screen():
+    """ This Funtion clear the screen and reset turtle to intial position """
     screen.resetscreen()
 
 
