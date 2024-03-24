@@ -1,0 +1,35 @@
+import turtle
+
+
+def forward():
+    my_turtle.forward(20)
+
+
+def backwards():
+    my_turtle.backward(20)
+
+
+def turn_clockwise():
+    my_turtle.right(20)
+
+
+def turn_anticlockwise():
+    my_turtle.left(20)
+
+
+def clear_screen():
+    screen.resetscreen()
+
+
+my_turtle = turtle.Turtle()
+screen = turtle.Screen()
+
+screen.listen()
+screen.onkey(key="w", fun=forward)
+screen.onkey(key="s", fun=backwards)
+screen.onkey(key="d", fun=turn_clockwise)
+screen.onkey(key="a", fun=turn_anticlockwise)
+screen.onkey(key="c", fun=clear_screen)
+
+
+screen.mainloop()
